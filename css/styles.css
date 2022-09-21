@@ -102,7 +102,6 @@ a {
   margin-left: 93px;
 }
 
-
 .site-nav .link {
   display: flex;
   color: var(--title-text-color);
@@ -221,20 +220,15 @@ a {
   gap: 30px;
 }
 
-.section-benefits .item {
-  width: 270px;
-}
-.section-benefits .item::before {
-  display: block;
+.icon-benefits {
+  display: flex;
   margin-bottom: 30px;
-  content: "";
+  align-items: center;
+  justify-content: center;
+  width: 270px;
   height: 120px;
-  background-size: 70px;
-  background-repeat: no-repeat;
-  background-position: center;
   background-color: var(--second-bcg-color);
 }
-
 
 /*What we can and team*/
 .we-do {
@@ -291,10 +285,9 @@ img {
   padding-left: 32px;
 }
 .social-item {
-display: flex;
-align-items: center;
-margin-bottom: 30px;
-
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
 }
 .social-item:not(:first-child) {
   margin-left: 10px;
@@ -312,7 +305,7 @@ margin-bottom: 30px;
   background-color: var(--accent-color);
 }
 .social-link svg {
-fill: #AFB1B8;
+  fill: #afb1b8;
 }
 .social-link:hover svg {
   fill: var(--primary-background-color);
@@ -334,12 +327,16 @@ fill: #AFB1B8;
 }
 
 .clients-item {
-margin-right: 30px;
-width: 170px;
-height: 92px;
-border: 1px solid #AFB1B8;
-border-radius: 3px;
+  margin-right: 30px;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 3px;
 }
+.clients-item:hover {
+  border: 1px solid #2196f3;
+}
+
 .clients-icon {
   display: flex;
   margin-top: 16px;
@@ -348,7 +345,7 @@ border-radius: 3px;
   margin-bottom: 16px;
 }
 .clients-icon svg {
-  fill: #AFB1B8;
+  fill: #afb1b8;
 }
 
 .clients-icon:hover svg {
@@ -455,4 +452,39 @@ border-radius: 3px;
 .footer-link .link:hover,
 .footer-link .link:focus {
   color: var(--primary-bcg-color);
+}
+
+/*контейнер з іконками у футері*/
+.footer-social-container {
+  display: flex;
+  width: 205px;
+  height: 45px;
+  margin-top: 20px;
+}
+.footer-social-item {
+  display: flex;
+}
+.foo-title {
+  display: block;
+  margin-bottom: 20px;
+  color: var(--primary-background-color);
+}
+.footer-svg {
+  height: 20px;
+  width: 20px;
+  fill: #ffffff;
+}
+.footer-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border: 0px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.footer-button:hover,
+.footer-button:focus {
+  background-color: var(--accent-color);
 }

@@ -378,8 +378,13 @@ img {
   background-color: var(--accent-color);
   color: var(--primary-background-color);
   border: var(--accent-color);
+  }
+.buttons-filter:hover,
+.buttons-filter:focus {
+box-shadow: 0 2px 2px 0 #0000001F;
+0 1px 2px 0 #00000014;
+0 3px 1px 0 #0000001A;;
 }
-
 .portfolio-nav {
   display: flex;
   margin-bottom: 50px;
@@ -392,6 +397,15 @@ img {
   flex-wrap: wrap;
   gap: 30px;
 }
+
+.portfolio-item {
+  display: block;
+}
+.portfolio-item:hover {
+box-shadow: 1px 4px 6px 0 #00000029;
+0 4px 4px 0 #0000000F;
+0 1px 1px 0 #0000001F;}
+
 .flex-element {
   width: 370px;
 }
@@ -419,7 +433,10 @@ img {
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
-
+.footer-flex {
+  display: flex;
+  align-items: baseline;
+}
 .footer {
   background-color: #2f303a;
   padding-top: 60px;
@@ -455,6 +472,9 @@ img {
 }
 
 /*контейнер з іконками у футері*/
+.connect {
+  padding-left: 70px;
+}
 .footer-social-container {
   display: flex;
   width: 205px;
@@ -463,11 +483,13 @@ img {
 }
 .footer-social-item {
   display: flex;
+  gap: 10px;
 }
 .foo-title {
   display: block;
   margin-bottom: 20px;
   color: var(--primary-background-color);
+  text-transform: uppercase;
 }
 .footer-svg {
   height: 20px;
@@ -483,6 +505,7 @@ img {
   border: 0px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
+  
 }
 .footer-button:hover,
 .footer-button:focus {

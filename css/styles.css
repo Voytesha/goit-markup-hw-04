@@ -488,6 +488,7 @@ box-shadow: 1px 4px 6px 0 #00000029;
 .foo-title {
   display: block;
   margin-bottom: 20px;
+  font-weight: 700;
   color: var(--primary-background-color);
   text-transform: uppercase;
 }

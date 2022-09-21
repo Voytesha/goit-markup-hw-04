@@ -137,6 +137,12 @@ a {
   color: var(--primary-text-color);
 }
 
+.nav-contacts .link svg {
+  fill: var(--primary-text-color);
+}
+.nav-contacts .link:hover svg {
+  fill: var(--accent-color);
+}
 
 .hero-section {
   max-width: 1600px;
@@ -282,11 +288,13 @@ img {
 }
 .team-social-item {
   display: flex;
+  padding-left: 32px;
 }
 .social-item {
 display: flex;
 align-items: center;
 margin-bottom: 30px;
+
 }
 .social-item:not(:first-child) {
   margin-left: 10px;
@@ -303,8 +311,11 @@ margin-bottom: 30px;
 .social-link:hover {
   background-color: var(--accent-color);
 }
+.social-link svg {
+fill: #AFB1B8;
+}
 .social-link:hover svg {
-  fill: var(--secondary-text-color);
+  fill: var(--primary-background-color);
 }
 
 .about-member {
@@ -335,6 +346,9 @@ border-radius: 3px;
   margin-left: 32px;
   margin-right: 32px;
   margin-bottom: 16px;
+}
+.clients-icon svg {
+  fill: #AFB1B8;
 }
 
 .clients-icon:hover svg {

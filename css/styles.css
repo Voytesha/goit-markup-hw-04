@@ -129,6 +129,7 @@ a {
 }
 
 .nav-contacts .link {
+  display: flex;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -138,6 +139,7 @@ a {
 
 .nav-contacts .link svg {
   fill: var(--primary-text-color);
+  margin-right: 10px;
 }
 .nav-contacts .link:hover svg {
   fill: var(--accent-color);
@@ -263,9 +265,12 @@ img {
 .team {
   background-color: var(--second-bcg-color);
 }
+.social-member {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 .team-member {
   display: block;
-  margin-top: 30px;
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
@@ -282,12 +287,11 @@ img {
 }
 .team-social-item {
   display: flex;
-  padding-left: 32px;
+  justify-content: center;
 }
 .social-item {
   display: flex;
   align-items: center;
-  margin-bottom: 30px;
 }
 .social-item:not(:first-child) {
   margin-left: 10px;
@@ -326,30 +330,30 @@ img {
   justify-content: center;
 }
 
-.clients-item {
+.clients-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-right: 30px;
   width: 170px;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 3px;
 }
-.clients-item:hover {
-  border: 1px solid #2196f3;
-}
 
-.clients-icon {
-  display: flex;
-  margin-top: 16px;
-  margin-left: 32px;
-  margin-right: 32px;
-  margin-bottom: 16px;
-}
 .clients-icon svg {
   fill: #afb1b8;
 }
+.clients-icon:hover {
+  border: 1px solid var(--accent-color);
+}
+.clients-icon:hover svg,
+.clients-icon:focus svg {
+  fill: var(--accent-color);
+}
 
-.clients-icon:hover svg {
-  fill: #2196f3;
+.clients-icon.current svg {
+color: var(--accent-color);
 }
 
 /*second page*
@@ -381,10 +385,11 @@ img {
   }
 .buttons-filter:hover,
 .buttons-filter:focus {
-box-shadow: 0 2px 2px 0 #0000001F;
-0 1px 2px 0 #00000014;
-0 3px 1px 0 #0000001A;;
+box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12),
+0 1px 2px 0 rgba(0, 0, 0, 0.08),
+0 3px 1px 0 rgba(0, 0, 0, 0.1);
 }
+
 .portfolio-nav {
   display: flex;
   margin-bottom: 50px;
@@ -473,7 +478,7 @@ box-shadow: 1px 4px 6px 0 #00000029;
 
 /*контейнер з іконками у футері*/
 .connect {
-  padding-left: 70px;
+  margin-left: 70px;
 }
 .footer-social-container {
   display: flex;
